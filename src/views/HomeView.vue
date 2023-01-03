@@ -6,13 +6,25 @@
       <div class="three">제목</div>
       <div class="four">첨부파일</div>
       <div class="five">끌어오기</div>
-      <div class="one2">2</div>
-      <div class="two2">2</div>
-      <div class="three2">2</div>
-      <div class="four2">2</div>
-      <div class="five2">2</div>
+      <div class="one2">
+        <input type="text" class="input" /><button>계정</button>
+      </div>
+      <div class="two2">
+        <input type="text" class="input" /><button>주소록</button>
+      </div>
+      <div class="three2"><input type="text" class="input" /></div>
+      <div class="four2"><button>내 PC</button></div>
+      <div class="five2"><div>마우스로 끌어오기</div></div>
     </div>
-    <div class="six">내용</div>
+    <div class="six">
+      <textarea
+        class="mail"
+        name="mail"
+        id="mail"
+        cols="155px"
+        rows="20px"
+      ></textarea>
+    </div>
     <div class="seven">
       <button>취소</button>
       <button>전송</button>
@@ -58,61 +70,69 @@ export default {}
 .one { 
   grid-area: one;
   /* background-color: lightcoral; */
-  border-style: solid;
+  /* border-style: solid; */
  }
 .two {
    grid-area: two;
    /* background-color: lightgoldenrodyellow; */
-   border-style: solid;
+   /* border-style: solid; */
    }
 .three { 
   grid-area: three;
   /* background-color: lightcoral; */
-  border-style: solid;
+  /* border-style: solid; */
  }
 .four {
    grid-area: four; 
    /* background-color: lightgoldenrodyellow; */
-   border-style: solid;
+   /* border-style: solid; */
   }
 .five {
    grid-area: five; 
    /* background-color: lightcoral; */
-   border-style: solid;
+   /* border-style: solid; */
   }
 .six { 
   grid-area: six; 
-  background-color: lightgoldenrodyellow;
-  border-style: solid;
+  /* background-color: lightgoldenrodyellow; */
+  /* border-style: solid; */
 }
 .seven {
    grid-area: seven;
    /* background-color: lightcoral; */
-   border-style: solid;
+   /* border-style: solid; */
    }
 .one2{
   grid-area: one2;
-  /* background-color: lightblue; */
-  border-style: solid;
+  background-color: lightblue;
+  /* border-style: solid; */
 }
 .two2{
   grid-area: two2;
   /* background-color: lightblue; */
-  border-style: solid;
+  /* border-style: solid; */
 }
 .three2{
   grid-area: three2;
   /* background-color: lightblue; */
-  border-style: solid;
+  /* border-style: solid; */
 }
 .four2{
   grid-area: four2;
   /* background-color: lightblue; */
-  border-style: solid;
+  /* border-style: solid; */
 }
 .five2{
   grid-area: five2;
   /* background-color: lightblue; */
-  border-style: solid;
+  /* border-style: solid; */
+}
+.mail{
+  margin: 1% 1% 1% 1%;
+  resize:none;/* 크기고정 */ 
+  overflow: auto;
+}
+.input{
+  width: 800px;
 }
 </style>

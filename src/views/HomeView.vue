@@ -7,13 +7,25 @@
       <div class="four">첨부 파일</div>
     </div>
     <div class="b">
-      <div class="one2"><input type="text" /></div>
-      <div class="two2"><input type="text" /></div>
-      <div class="three2"><input type="text" /></div>
+      <div class="one2">
+        <input class="input" type="text" /><button>계정</button>
+      </div>
+      <div class="two2">
+        <input class="input" type="text" /><button>주소록</button>
+      </div>
+      <div class="three2"><input class="input" type="text" /></div>
       <div class="four2"><button>내 PC</button></div>
       <div class="four3">끌어오기</div>
     </div>
-    <div class="six">내용</div>
+    <div class="six">
+      <textarea
+        class="mail"
+        name="mail"
+        id="mail"
+        cols="155px"
+        rows="22px"
+      ></textarea>
+    </div>
     <div class="seven">
       <button>취소</button>
       <button>보내기</button>
@@ -85,19 +97,32 @@ export default {}
 .one2 { 
   grid-area: 1 / 1 / 2 / 2;
   background-color: lightgoldenrodyellow;
+  display: block;
+  align-self: center;
+  display: flex;
   }
 
-.two2 { grid-area: 2 / 1 / 3 / 2; 
-    background-color: lightcoral;
+.two2 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  background-color: lightcoral;
+  display: block;
+  align-self: center;
+  display: flex;
 }
 
 .three2 {
   grid-area: 3 / 1 / 4 / 2; 
   background-color: lightgoldenrodyellow;
+  display: block;
+  align-self: center;
+  display: flex;
   }
 
-.four2 { grid-area: 4 / 1 / 5 / 2;
-    background-color: lightcoral;
+.four2 { 
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: lightcoral;
+  display: block;
+  align-self: center;
  }
 
 .four3 {
@@ -109,7 +134,23 @@ export default {}
 background-color: lightslategray;}
 
 .seven {
-   grid-area: seven; 
-   background-color: lightgoldenrodyellow;}
+  grid-area: seven; 
+  background-color: lightgoldenrodyellow;
+  display: block;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+  }
+
+.input {
+  width: 900px;
+}
+
+.mail{
+  margin: 1% 1% 1% 1%;
+  resize:none;/* 크기고정 */ 
+  overflow: auto;
+}
+
 
 </style>
